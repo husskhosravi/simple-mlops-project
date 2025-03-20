@@ -1,0 +1,50 @@
+# Configuration file for the MLOps project
+
+# Data settings
+data:
+  raw_dir: 'data/raw'
+  processed_dir: 'data/processed'
+  target_column: 'target'
+  features:
+    - feature1
+    - feature2
+    - feature3
+  test_size: 0.2
+  validation_size: 0.2
+  random_state: 42
+
+# Model settings
+model:
+  model_dir: 'models'
+  model_type: 'RandomForestClassifier'
+  n_estimators: 100
+  max_depth: 10
+  random_state: 42
+  test_size: 0.2
+  threshold: 0.5
+
+# MLflow settings
+mlflow:
+  tracking_uri: 'http://localhost:5000'
+  experiment_name: 'default-experiment'
+  model_name: 'simple-classifier'
+  register: true
+
+# API settings
+api:
+  host: '0.0.0.0'
+  port: 8000
+  debug: false
+
+# Monitoring settings
+monitoring:
+  enable: true
+  metrics:
+    - accuracy
+    - precision
+    - recall
+    - f1
+  alert_threshold:
+    accuracy: 0.8
+    drift: 0.1
+  check_frequency: 'daily'
