@@ -1,3 +1,4 @@
+# .github/workflows/ci.yml
 name: CI Pipeline
 
 on:
@@ -18,9 +19,12 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
+        pip install pytest pytest-cov
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-    - name: Basic checks
+    - name: Lint with flake8
       run: |
-        echo "Running basic checks on the repository"
-        ls -la
-        echo "Repository structure is valid"
+        pip install flake8
+        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+    - name: Test with pytest
+      run: |
+        pytest --cov=src tests/

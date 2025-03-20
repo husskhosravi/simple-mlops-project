@@ -1,6 +1,6 @@
 # Simple MLOps Project
 
-This repository demonstrates core MLOps principles with a simple machine learning model pipeline.
+G'day! This repo demonstrates core MLOps principles with a simple machine learning model pipeline.
 
 ## Project Structure
 
@@ -41,25 +41,23 @@ simple-mlops-project/
 ├── .gitignore                      # Git ignore file
 ├── Dockerfile                      # Docker configuration
 ├── requirements.txt                # Project dependencies
-├── setup.py                        # Package setup
 ├── Makefile                        # Automation commands
 ├── config.yaml                     # Configuration parameters
-├── README.md                       # Project documentation
-└── mlflow.yaml                     # MLflow configuration
+└── README.md                       # Project documentation
 ```
 
 ## MLOps Components
 
-This project demonstrates the following MLOps practices:
+This project showcases the following MLOps practices:
 
-1. **Version Control**: Git for code, data (using DVC), and model versioning
+1. **Version Control**: Git for code and data versioning (using DVC)
 2. **CI/CD Pipeline**: Automated testing and deployment using GitHub Actions
-3. **Containerization**: Docker for creating reproducible environments
-4. **Experiment Tracking**: MLflow for tracking experiments and model versions
-5. **Model Registry**: Storing and versioning models
-6. **Testing**: Unit and integration tests for data and models
-7. **Monitoring**: Basic monitoring setup for model performance
-8. **Documentation**: Comprehensive documentation of the project
+3. **Containerisation**: Docker for creating reproducible environments
+4. **Model Versioning**: Tracking model versions with timestamps
+5. **Testing**: Unit and integration tests for data and models
+6. **Logging & Metrics**: Comprehensive logging and performance metrics
+7. **Config Management**: Centralised configuration in YAML files
+8. **Documentation**: Complete project documentation
 
 ## Getting Started
 
@@ -106,6 +104,33 @@ pip install -r requirements.txt
    make all
    ```
 
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.# simple-mlops-project
-MLOps practices
+## Project Details
+
+### Machine Learning Pipeline
+
+This project implements a complete machine learning pipeline:
+
+1. **Data Processing**: Cleaning and preparing the data
+2. **Feature Engineering**: Creating and selecting relevant features
+3. **Model Training**: Training a Random Forest classifier
+4. **Model Evaluation**: Evaluating performance with accuracy, precision, recall, and F1 score
+5. **Model Deployment**: Serving the model via FastAPI (optional)
+
+### Model Versioning
+
+Each trained model is saved with a timestamp, allowing for easy tracking of model versions:
+- `models/model_YYYYMMDD_HHMMSS.pkl`: Versioned models
+- `models/model_latest.pkl`: The most recent model for easy access
+
+### Containerisation
+
+The project includes a Dockerfile for containerising the model and its dependencies, ensuring consistent behaviour across different environments.
+
+### CI/CD Pipeline
+
+GitHub Actions workflows are set up to:
+- **CI**: Run tests on every push and pull request
+- **CD**: Build and deploy the model on releases
+
+## Licence
+This project is licensed under the MIT Licence - see the LICENCE file for details.
