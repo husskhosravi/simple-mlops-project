@@ -1,6 +1,6 @@
 # Simple MLOps Project
 
-This repository demonstrates core MLOps principles with a simple machine learning model pipeline.
+G'day! This repo demonstrates core MLOps principles with a simple machine learning model pipeline.
 
 ## Project Structure
 
@@ -48,15 +48,15 @@ simple-mlops-project/
 
 ## MLOps Components
 
-This project demonstrates the following MLOps practices:
+This project showcases the following MLOps practices:
 
 1. **Version Control**: Git for code and data versioning (using DVC)
 2. **CI/CD Pipeline**: Automated testing and deployment using GitHub Actions
-3. **Containerization**: Docker for creating reproducible environments
+3. **Containerisation**: Docker for creating reproducible environments
 4. **Model Versioning**: Tracking model versions with timestamps
 5. **Testing**: Unit and integration tests for data and models
 6. **Logging & Metrics**: Comprehensive logging and performance metrics
-7. **Config Management**: Centralized configuration in YAML files
+7. **Config Management**: Centralised configuration in YAML files
 8. **Documentation**: Complete project documentation
 
 ## Getting Started
@@ -122,9 +122,9 @@ Each trained model is saved with a timestamp, allowing for easy tracking of mode
 - `models/model_YYYYMMDD_HHMMSS.pkl`: Versioned models
 - `models/model_latest.pkl`: The most recent model for easy access
 
-### Containerization
+### Containerisation
 
-The project includes a Dockerfile for containerizing the model and its dependencies, ensuring consistent behavior across different environments.
+The project includes a Dockerfile for containerising the model and its dependencies, ensuring consistent behaviour across different environments.
 
 ### CI/CD Pipeline
 
@@ -132,5 +132,5 @@ GitHub Actions workflows are set up to:
 - **CI**: Run tests on every push and pull request
 - **CD**: Build and deploy the model on releases
 
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+## Licence
+This project is licensed under the MIT Licence - see the LICENCE file for details.
