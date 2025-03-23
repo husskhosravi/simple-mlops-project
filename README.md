@@ -1,6 +1,6 @@
 # Simple MLOps Project
 
-G'day! This repo demonstrates core MLOps principles with a simple machine learning model pipeline.
+This repo demonstrates core MLOps principles with a simple machine learning model pipeline.
 
 ## Project Structure
 
@@ -131,6 +131,3 @@ The project includes a Dockerfile for containerising the model and its dependenc
 GitHub Actions workflows are set up to:
 - **CI**: Run tests on every push and pull request
 - **CD**: Build and deploy the model on releases
-
-## Licence
-This project is licensed under the MIT Licence - see the LICENCE file for details.
