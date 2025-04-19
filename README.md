@@ -71,7 +71,7 @@ This project showcases the following MLOps practices:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/simple-mlops-project.git
+git clone https://github.com/husskhosravi/simple-mlops-project.git
 cd simple-mlops-project
 
 # Create a virtual environment
